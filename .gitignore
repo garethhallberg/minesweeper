@@ -1,0 +1,14 @@
+
+
+*.xcuserstate
+
+.DS_Store
+
+
+Pods/
+WorkspaceSettings.xcsettings
+xcdebugger/
+Canvassing/Canvassing.xcodeproj/xcuserdata/garethhallberg.xcuserdatad/xcschemes/xcschememanagement.plist
+*.xcworkspace/contents.xcworkspacedata
+Canvassing/build
+Canvassing/docs

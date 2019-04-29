@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF730A802276FAC000397BC3 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A7F2276FAC000397BC3 /* Moves.swift */; };
+		CF730A812276FB2B00397BC3 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A7F2276FAC000397BC3 /* Moves.swift */; };
+		CF730A832276FD0A00397BC3 /* Lives.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A822276FD0A00397BC3 /* Lives.swift */; };
+		CF730A872276FEB900397BC3 /* LivesUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A862276FEB900397BC3 /* LivesUnitTest.swift */; };
+		CF730A882276FF4300397BC3 /* Lives.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A822276FD0A00397BC3 /* Lives.swift */; };
+		CF730A8A2276FFF500397BC3 /* MovesUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A892276FFF500397BC3 /* MovesUnitTest.swift */; };
+		CF730A8C227700C500397BC3 /* MinesweepGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A8B227700C500397BC3 /* MinesweepGame.swift */; };
+		CF730A8E2277028F00397BC3 /* MinesweepGameUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A8D2277028F00397BC3 /* MinesweepGameUnitTest.swift */; };
+		CF730A8F2277030900397BC3 /* MinesweepGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A8B227700C500397BC3 /* MinesweepGame.swift */; };
+		CF730A912277097A00397BC3 /* Valid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A902277097A00397BC3 /* Valid.swift */; };
+		CF730A9222770B3700397BC3 /* Valid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A902277097A00397BC3 /* Valid.swift */; };
+		CF730A962277360F00397BC3 /* TileUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A952277360F00397BC3 /* TileUnitTest.swift */; };
+		CFE4E78A22734B6E003544D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E78922734B6E003544D1 /* main.swift */; };
+		CFE4E79722734C94003544D1 /* MinesweepTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E79622734C94003544D1 /* MinesweepTestTarget.swift */; };
+		CFE4E79D22735707003544D1 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E79C22735707003544D1 /* Tile.swift */; };
+		CFE4E7A1227357C6003544D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E79F227357C6003544D1 /* main.swift */; };
+		CFE4E7A2227357C6003544D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E79F227357C6003544D1 /* main.swift */; };
+		CFE4E7A3227357C6003544D1 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E7A0227357C6003544D1 /* Tile.swift */; };
+		CFE4E7A4227357C6003544D1 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E7A0227357C6003544D1 /* Tile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFE4E78422734B6E003544D1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF730A7F2276FAC000397BC3 /* Moves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
+		CF730A822276FD0A00397BC3 /* Lives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lives.swift; sourceTree = "<group>"; };
+		CF730A862276FEB900397BC3 /* LivesUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivesUnitTest.swift; sourceTree = "<group>"; };
+		CF730A892276FFF500397BC3 /* MovesUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesUnitTest.swift; sourceTree = "<group>"; };
+		CF730A8B227700C500397BC3 /* MinesweepGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweepGame.swift; sourceTree = "<group>"; };
+		CF730A8D2277028F00397BC3 /* MinesweepGameUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweepGameUnitTest.swift; sourceTree = "<group>"; };
+		CF730A902277097A00397BC3 /* Valid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valid.swift; sourceTree = "<group>"; };
+		CF730A952277360F00397BC3 /* TileUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileUnitTest.swift; sourceTree = "<group>"; };
+		CFE4E78622734B6E003544D1 /* Minesweep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Minesweep; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE4E78922734B6E003544D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CFE4E79422734C94003544D1 /* MinesweepTestTarget.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinesweepTestTarget.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE4E79622734C94003544D1 /* MinesweepTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweepTestTarget.swift; sourceTree = "<group>"; };
+		CFE4E79822734C94003544D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE4E79C22735707003544D1 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		CFE4E79F227357C6003544D1 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CFE4E7A0227357C6003544D1 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFE4E78322734B6E003544D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE4E79122734C94003544D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFE4E77D22734B6E003544D1 = {
+			isa = PBXGroup;
+			children = (
+				CFE4E78822734B6E003544D1 /* Minesweep */,
+				CFE4E79522734C94003544D1 /* MinesweepTestTarget */,
+				CFE4E78722734B6E003544D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFE4E78722734B6E003544D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFE4E78622734B6E003544D1 /* Minesweep */,
+				CFE4E79422734C94003544D1 /* MinesweepTestTarget.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFE4E78822734B6E003544D1 /* Minesweep */ = {
+			isa = PBXGroup;
+			children = (
+				CFE4E78922734B6E003544D1 /* main.swift */,
+				CF730A822276FD0A00397BC3 /* Lives.swift */,
+				CF730A7F2276FAC000397BC3 /* Moves.swift */,
+				CFE4E79C22735707003544D1 /* Tile.swift */,
+				CFE4E79E227357C6003544D1 /* Minesweep */,
+				CF730A8B227700C500397BC3 /* MinesweepGame.swift */,
+				CF730A902277097A00397BC3 /* Valid.swift */,
+			);
+			path = Minesweep;
+			sourceTree = "<group>";
+		};
+		CFE4E79522734C94003544D1 /* MinesweepTestTarget */ = {
+			isa = PBXGroup;
+			children = (
+				CFE4E79622734C94003544D1 /* MinesweepTestTarget.swift */,
+				CFE4E79822734C94003544D1 /* Info.plist */,
+				CF730A862276FEB900397BC3 /* LivesUnitTest.swift */,
+				CF730A892276FFF500397BC3 /* MovesUnitTest.swift */,
+				CF730A8D2277028F00397BC3 /* MinesweepGameUnitTest.swift */,
+				CF730A952277360F00397BC3 /* TileUnitTest.swift */,
+			);
+			path = MinesweepTestTarget;
+			sourceTree = "<group>";
+		};
+		CFE4E79E227357C6003544D1 /* Minesweep */ = {
+			isa = PBXGroup;
+			children = (
+				CFE4E79F227357C6003544D1 /* main.swift */,
+				CFE4E7A0227357C6003544D1 /* Tile.swift */,
+			);
+			name = Minesweep;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFE4E78522734B6E003544D1 /* Minesweep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE4E78D22734B6E003544D1 /* Build configuration list for PBXNativeTarget "Minesweep" */;
+			buildPhases = (
+				CFE4E78222734B6E003544D1 /* Sources */,
+				CFE4E78322734B6E003544D1 /* Frameworks */,
+				CFE4E78422734B6E003544D1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Minesweep;
+			productName = Minesweep;
+			productReference = CFE4E78622734B6E003544D1 /* Minesweep */;
+			productType = "com.apple.product-type.tool";
+		};
+		CFE4E79322734C94003544D1 /* MinesweepTestTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE4E79922734C94003544D1 /* Build configuration list for PBXNativeTarget "MinesweepTestTarget" */;
+			buildPhases = (
+				CFE4E79022734C94003544D1 /* Sources */,
+				CFE4E79122734C94003544D1 /* Frameworks */,
+				CFE4E79222734C94003544D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinesweepTestTarget;
+			productName = MinesweepTestTarget;
+			productReference = CFE4E79422734C94003544D1 /* MinesweepTestTarget.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFE4E77E22734B6E003544D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = gareth15;
+				TargetAttributes = {
+					CFE4E78522734B6E003544D1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					CFE4E79322734C94003544D1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CFE4E78122734B6E003544D1 /* Build configuration list for PBXProject "Minesweep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CFE4E77D22734B6E003544D1;
+			productRefGroup = CFE4E78722734B6E003544D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFE4E78522734B6E003544D1 /* Minesweep */,
+				CFE4E79322734C94003544D1 /* MinesweepTestTarget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFE4E79222734C94003544D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFE4E78222734B6E003544D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE4E78A22734B6E003544D1 /* main.swift in Sources */,
+				CF730A832276FD0A00397BC3 /* Lives.swift in Sources */,
+				CF730A8C227700C500397BC3 /* MinesweepGame.swift in Sources */,
+				CF730A912277097A00397BC3 /* Valid.swift in Sources */,
+				CFE4E79D22735707003544D1 /* Tile.swift in Sources */,
+				CFE4E7A1227357C6003544D1 /* main.swift in Sources */,
+				CF730A802276FAC000397BC3 /* Moves.swift in Sources */,
+				CFE4E7A3227357C6003544D1 /* Tile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE4E79022734C94003544D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF730A9222770B3700397BC3 /* Valid.swift in Sources */,
+				CF730A8F2277030900397BC3 /* MinesweepGame.swift in Sources */,
+				CF730A882276FF4300397BC3 /* Lives.swift in Sources */,
+				CF730A812276FB2B00397BC3 /* Moves.swift in Sources */,
+				CF730A872276FEB900397BC3 /* LivesUnitTest.swift in Sources */,
+				CFE4E7A4227357C6003544D1 /* Tile.swift in Sources */,
+				CF730A962277360F00397BC3 /* TileUnitTest.swift in Sources */,
+				CFE4E7A2227357C6003544D1 /* main.swift in Sources */,
+				CF730A8E2277028F00397BC3 /* MinesweepGameUnitTest.swift in Sources */,
+				CFE4E79722734C94003544D1 /* MinesweepTestTarget.swift in Sources */,
+				CF730A8A2276FFF500397BC3 /* MovesUnitTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CFE4E78B22734B6E003544D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFE4E78C22734B6E003544D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CFE4E78E22734B6E003544D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9JA79N9E5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFE4E78F22734B6E003544D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9JA79N9E5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CFE4E79A22734C94003544D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J9JA79N9E5;
+				INFOPLIST_FILE = MinesweepTestTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gareth.pushimage.MinesweepTestTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFE4E79B22734C94003544D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J9JA79N9E5;
+				INFOPLIST_FILE = MinesweepTestTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gareth.pushimage.MinesweepTestTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFE4E78122734B6E003544D1 /* Build configuration list for PBXProject "Minesweep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE4E78B22734B6E003544D1 /* Debug */,
+				CFE4E78C22734B6E003544D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE4E78D22734B6E003544D1 /* Build configuration list for PBXNativeTarget "Minesweep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE4E78E22734B6E003544D1 /* Debug */,
+				CFE4E78F22734B6E003544D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE4E79922734C94003544D1 /* Build configuration list for PBXNativeTarget "MinesweepTestTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE4E79A22734C94003544D1 /* Debug */,
+				CFE4E79B22734C94003544D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFE4E77E22734B6E003544D1 /* Project object */;
+}
