@@ -16,7 +16,7 @@ print("Hello and welcome to Swift Minesweep!")
 
 
 
-let game = MinesweepGame(width: 8, height: 8, moves: 10, lives: 3)
+let game = MinesweepGame(width: 8, height: 8, moves: 16, lives: 3)
 var done = false
 print("Avoid the mines. Type up, down, right or left to move.")
 while(done != true)

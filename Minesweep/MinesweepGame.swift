@@ -46,6 +46,7 @@ class MinesweepGame {
         setupLives()
         generateInitialTiles()
         setupPlayerPosition()
+        print("You are at position \(playerPosition) on the board")
     }
     
     func hasGameEnded() -> Bool

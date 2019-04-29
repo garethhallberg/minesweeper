@@ -8,10 +8,6 @@
 
 import Foundation
 
-
-
-
-
 class Tile
 {
     private var hasMineInTile: Bool
@@ -29,9 +25,6 @@ class Tile
         hasMineInTile = false
     }
 }
-
-
-
 
 
 class TileFactory
