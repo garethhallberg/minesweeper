@@ -1,15 +1,15 @@
 //
-//  MovesUnitTest.swift
+//  GameboardUnitTest.swift
 //  MinesweepTestTarget
 //
-//  Created by gareth15 on 29/04/2019.
+//  Created by gareth15 on 30/04/2019.
 //  Copyright © 2019 gareth15. All rights reserved.
 //
 
 import XCTest
 @testable import Minesweep
 
-class MovesUnitTest: XCTestCase {
+class GameboardUnitTest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,13 +19,11 @@ class MovesUnitTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    
-    func testMovesMovesTakenAfterInitAnd3Moves(){
-        let moves = Moves()
-        moves.didMove()
-        moves.didMove()
-        moves.didMove()
-        XCTAssert(moves.getMovesTaken() == 3)
+    func testCreateGameWithNoParametersHas80Tiles()
+    {
+        let game = MinesweepGame()
+        
+        XCTAssert(game.board!.tileArray.count == 80)
     }
 
 }

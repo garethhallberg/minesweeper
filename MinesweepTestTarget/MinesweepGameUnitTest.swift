@@ -19,26 +19,14 @@ class MinesweepGameUnitTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testCreateGameWithNoParametersHas80Tiles()
-    {
-        let game = MinesweepGame()
-        print(game.tileArray.count)
-        XCTAssert(game.tileArray.count == 80)
-    }
     
     func testCreateGameHas4Lives()
     {
-        let game = MinesweepGame(width: 10, height: 10, moves: 3, lives: 4)
+        let game = MinesweepGame(width: 10, height: 10, lives: 4)
         
         XCTAssert(game.getLivesLeft() == 4)
     }
     
-    func testCreateGameHas20Moves()
-    {
-        let game = MinesweepGame(width: 8, height: 8, moves: 20, lives: 8)
-        
-        XCTAssert(game.getMovesLeft() == 20)
-    }
     
     func testValidInputTrue()
     {

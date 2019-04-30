@@ -20,40 +20,32 @@ enum Direction
 
 class MinesweepGame {
     
-    private let tileFactory = TileFactory()
+    
     private var moves: Moves?
     private var lives: Lives?
-    var tileArray = [Tile]()
+    var board: GameBoard?
+    
     var playerPosition = [4,4]
-    var startingNumberOfLives = 2
-    var startingNumberOfMoves = 20
-    var boardWidth = 8
-    var boardHeight = 8
+//    var startingNumberOfLives = 2
+//    var startingNumberOfMoves = 20
+
     
     
-    init(width: Int = 8, height: Int = 10, moves: Int = 15, lives: Int = 5) {
-        boardWidth = width
-        boardHeight = height
-        startingNumberOfMoves = moves
-        startingNumberOfLives = lives
-        
-        setupGame()
-    }
-    
-    func setupGame()
-    {
-        setUpMoves()
-        setupLives()
-        generateInitialTiles()
+    init(width: Int = 8, height: Int = 10, lives: Int = 5) {
+        board = GameBoard(width: width, height: height)
+        moves = Moves()
+        setupLives(numLives: lives)
         setupPlayerPosition()
         print("You are at position \(playerPosition) on the board")
     }
+    
+    
     
     func hasGameEnded() -> Bool
     {
         if hasPlayerWon()
         {
-            print("Well done you have won")
+            print("Well done you have won. Your score was \(getMovesTaken())")
             return true
         }
         
@@ -62,10 +54,6 @@ class MinesweepGame {
             return true
         }
         
-        if getMovesLeft() <= 0 {
-            print("You are out of moves. Try again.")
-            return true
-        }
         
         return false
     }
@@ -74,7 +62,7 @@ class MinesweepGame {
     {
         var hasWon = false
         
-        if playerPosition[0] == boardHeight
+        if playerPosition[0] == board?.getBoardHeight()
         {
             hasWon = true
         }
@@ -100,35 +88,30 @@ class MinesweepGame {
             return
         }
         
-        if !checkIfTileHasMine()
+        
+        if let board = board
         {
-            updatePlayerPosition(direction: direction)
-        }
-        else
-        {
-            playerHitsMine()
-        }
-        moves?.didMove()
-        print("You are at \(playerPosition). You have \(getMovesLeft()) moves left. You have \(getLivesLeft()) lives left.")
-    }
-    
-    func checkIfTileHasMine() -> Bool
-    {
-        let pos = playerPosition[0] * boardWidth + (playerPosition[1] + 1)
-        let tile = tileArray[pos]
-        let tileHasMine = tile.hasMine()
-        if tileHasMine {
-            tile.mineHasBeenHit()
-            return true
+            if board.checkIfTileHasMine(playerPosition: playerPosition) == false
+            {
+                updatePlayerPosition(direction: direction)
+            }
+            else
+            {
+                playerHitsMine()
+            }
         }
         
-        return false
+        
+        moves?.didMove()
+        print("You are at \(playerPosition). You have taken \(getMovesTaken()) moves. You have \(getLivesLeft()) lives left.")
     }
+    
+    
     
     func playerHitsMine()
     {
         lives?.didDie()
-        print("You have hit a mine. You have lost one life and have \(getLivesLeft()) of \(startingNumberOfLives)")
+        print("You have hit a mine. You have lost one life and have \(getLivesLeft())")
     }
     
     
@@ -160,8 +143,11 @@ class MinesweepGame {
     
     func setupPlayerPosition()
     {
-        let randomXPosition = Int.random(in: 1 ... boardWidth)
-        playerPosition = [0, randomXPosition]
+        if let board = board
+        {
+            let randomXPosition = Int.random(in: 1 ... board.getBoardWidth())
+            playerPosition = [0, randomXPosition]
+        }
     }
     
     
@@ -193,17 +179,26 @@ class MinesweepGame {
         }
         
         if direction == .left {
-            if playerPosition[1] % boardWidth == 0
+            if let board = board
             {
-                return Valid(valid: false, explanation: "You cannot move left when you are on the left column of the board")
+                if playerPosition[1] % board.getBoardWidth() == 0
+                {
+                    return Valid(valid: false, explanation: "You cannot move left when you are on the left column of the board")
+                }
             }
+            
         }
         
         if direction == .right {
-            if playerPosition[1] % boardWidth == boardWidth - 1
+            if let board = board
             {
-                return Valid(valid: false, explanation: "You cannot move right when you are on the right column of the board")
+                if playerPosition[1] % board.getBoardWidth() == board.getBoardWidth() - 1
+                {
+                    return Valid(valid: false, explanation: "You cannot move right when you are on the right column of the board")
+                }
             }
+            
+            
         }
         
         return Valid(valid: true, explanation: nil)
@@ -221,16 +216,6 @@ class MinesweepGame {
     }
     
     
-    func getMovesLeft() -> Int
-    {
-        if let moves = moves
-        {
-            return moves.getMovesLeft()
-        }
-        
-        return 0
-    }
-    
     func getLivesLeft() -> Int
     {
         if let lives = lives
@@ -241,25 +226,22 @@ class MinesweepGame {
         return 0
     }
     
-    
-    private func setUpMoves()
+    func getMovesTaken() -> Int
     {
-        moves = Moves(moves: startingNumberOfMoves)
-    }
-    
-    private func setupLives()
-    {
-        lives = Lives(lives: startingNumberOfLives)
-    }
-    
-    private func generateInitialTiles()
-    {
-        let max = boardWidth * boardHeight - 1
-        for _ in 0...max {
-            let tile = tileFactory.createTile()
-            tileArray.append(tile)
+        if let moves = moves
+        {
+            return moves.getMovesTaken()
         }
+        return 0
     }
+    
+    
+    private func setupLives(numLives: Int)
+    {
+        lives = Lives(lives: numLives)
+    }
+    
+    
     
     
 }

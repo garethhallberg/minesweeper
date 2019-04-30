@@ -12,17 +12,14 @@ import Foundation
 class Moves
 {
     private var movesTaken: Int
-    private var movesLeft: Int
     
-    init(moves: Int) {
-        movesLeft = moves
+    
+    init() {
+        
         movesTaken = 0
     }
     
-    func getMovesLeft() -> Int
-    {
-        return movesLeft
-    }
+    
     
     func getMovesTaken() -> Int
     {
@@ -31,7 +28,6 @@ class Moves
     
     func didMove()
     {
-        movesLeft -= 1
         movesTaken += 1
     }
     

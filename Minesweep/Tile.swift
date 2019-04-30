@@ -37,8 +37,8 @@ class TileFactory
     
     private func shouldHaveMine() -> Bool
     {
-        let randomNumber = Int.random(in: 0 ..< 8)
-        if randomNumber == 7
+        let randomNumber = Int.random(in: 0 ..< 4)
+        if randomNumber == 3
         {
             return true
         }

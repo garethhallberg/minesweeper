@@ -26,6 +26,9 @@
 		CFE4E7A2227357C6003544D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E79F227357C6003544D1 /* main.swift */; };
 		CFE4E7A3227357C6003544D1 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E7A0227357C6003544D1 /* Tile.swift */; };
 		CFE4E7A4227357C6003544D1 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E7A0227357C6003544D1 /* Tile.swift */; };
+		CFEF6F8E22783C8B00240845 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF6F8D22783C8B00240845 /* GameBoard.swift */; };
+		CFEF6F8F2278403600240845 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF6F8D22783C8B00240845 /* GameBoard.swift */; };
+		CFEF6F91227840B400240845 /* GameboardUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF6F90227840B400240845 /* GameboardUnitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +60,8 @@
 		CFE4E79C22735707003544D1 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		CFE4E79F227357C6003544D1 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CFE4E7A0227357C6003544D1 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		CFEF6F8D22783C8B00240845 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		CFEF6F90227840B400240845 /* GameboardUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardUnitTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 				CFE4E79E227357C6003544D1 /* Minesweep */,
 				CF730A8B227700C500397BC3 /* MinesweepGame.swift */,
 				CF730A902277097A00397BC3 /* Valid.swift */,
+				CFEF6F8D22783C8B00240845 /* GameBoard.swift */,
 			);
 			path = Minesweep;
 			sourceTree = "<group>";
@@ -118,6 +124,7 @@
 				CF730A892276FFF500397BC3 /* MovesUnitTest.swift */,
 				CF730A8D2277028F00397BC3 /* MinesweepGameUnitTest.swift */,
 				CF730A952277360F00397BC3 /* TileUnitTest.swift */,
+				CFEF6F90227840B400240845 /* GameboardUnitTest.swift */,
 			);
 			path = MinesweepTestTarget;
 			sourceTree = "<group>";
@@ -227,6 +234,7 @@
 				CFE4E7A1227357C6003544D1 /* main.swift in Sources */,
 				CF730A802276FAC000397BC3 /* Moves.swift in Sources */,
 				CFE4E7A3227357C6003544D1 /* Tile.swift in Sources */,
+				CFEF6F8E22783C8B00240845 /* GameBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEF6F8F2278403600240845 /* GameBoard.swift in Sources */,
 				CF730A9222770B3700397BC3 /* Valid.swift in Sources */,
 				CF730A8F2277030900397BC3 /* MinesweepGame.swift in Sources */,
 				CF730A882276FF4300397BC3 /* Lives.swift in Sources */,
@@ -241,6 +250,7 @@
 				CF730A872276FEB900397BC3 /* LivesUnitTest.swift in Sources */,
 				CFE4E7A4227357C6003544D1 /* Tile.swift in Sources */,
 				CF730A962277360F00397BC3 /* TileUnitTest.swift in Sources */,
+				CFEF6F91227840B400240845 /* GameboardUnitTest.swift in Sources */,
 				CFE4E7A2227357C6003544D1 /* main.swift in Sources */,
 				CF730A8E2277028F00397BC3 /* MinesweepGameUnitTest.swift in Sources */,
 				CFE4E79722734C94003544D1 /* MinesweepTestTarget.swift in Sources */,

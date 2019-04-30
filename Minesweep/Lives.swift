@@ -13,6 +13,7 @@ class Lives
 {
     private var livesLeft: Int
     
+    
     init(lives: Int)
     {
         livesLeft = lives
