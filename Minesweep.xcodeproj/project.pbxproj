@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF6D32F9227861AB008DF9D2 /* InputDirectionConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D32F8227861AB008DF9D2 /* InputDirectionConverter.swift */; };
+		CF6D32FD22786256008DF9D2 /* InputDirectionConverterUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D32FC22786256008DF9D2 /* InputDirectionConverterUnitTest.swift */; };
+		CF6D32FE227863C1008DF9D2 /* InputDirectionConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D32F8227861AB008DF9D2 /* InputDirectionConverter.swift */; };
+		CF6D33002278643B008DF9D2 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D32FF2278643B008DF9D2 /* InputValidator.swift */; };
+		CF6D3302227864AC008DF9D2 /* InputValidatorUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3301227864AC008DF9D2 /* InputValidatorUnitTest.swift */; };
+		CF6D3303227864E5008DF9D2 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D32FF2278643B008DF9D2 /* InputValidator.swift */; };
+		CF6D330522786623008DF9D2 /* ValidateMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D330422786623008DF9D2 /* ValidateMove.swift */; };
+		CF6D330622786709008DF9D2 /* ValidateMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D330422786623008DF9D2 /* ValidateMove.swift */; };
+		CF6D330822786732008DF9D2 /* ValidateMoveUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D330722786732008DF9D2 /* ValidateMoveUnitTest.swift */; };
 		CF730A802276FAC000397BC3 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A7F2276FAC000397BC3 /* Moves.swift */; };
 		CF730A812276FB2B00397BC3 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A7F2276FAC000397BC3 /* Moves.swift */; };
 		CF730A832276FD0A00397BC3 /* Lives.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF730A822276FD0A00397BC3 /* Lives.swift */; };
@@ -44,6 +53,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CF6D32F8227861AB008DF9D2 /* InputDirectionConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDirectionConverter.swift; sourceTree = "<group>"; };
+		CF6D32FC22786256008DF9D2 /* InputDirectionConverterUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDirectionConverterUnitTest.swift; sourceTree = "<group>"; };
+		CF6D32FF2278643B008DF9D2 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
+		CF6D3301227864AC008DF9D2 /* InputValidatorUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidatorUnitTest.swift; sourceTree = "<group>"; };
+		CF6D330422786623008DF9D2 /* ValidateMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateMove.swift; sourceTree = "<group>"; };
+		CF6D330722786732008DF9D2 /* ValidateMoveUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateMoveUnitTest.swift; sourceTree = "<group>"; };
 		CF730A7F2276FAC000397BC3 /* Moves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
 		CF730A822276FD0A00397BC3 /* Lives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lives.swift; sourceTree = "<group>"; };
 		CF730A862276FEB900397BC3 /* LivesUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivesUnitTest.swift; sourceTree = "<group>"; };
@@ -104,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				CFE4E78922734B6E003544D1 /* main.swift */,
+				CF6D330422786623008DF9D2 /* ValidateMove.swift */,
+				CF6D32F8227861AB008DF9D2 /* InputDirectionConverter.swift */,
+				CF6D32FF2278643B008DF9D2 /* InputValidator.swift */,
 				CF730A822276FD0A00397BC3 /* Lives.swift */,
 				CF730A7F2276FAC000397BC3 /* Moves.swift */,
 				CFE4E79C22735707003544D1 /* Tile.swift */,
@@ -125,6 +143,9 @@
 				CF730A8D2277028F00397BC3 /* MinesweepGameUnitTest.swift */,
 				CF730A952277360F00397BC3 /* TileUnitTest.swift */,
 				CFEF6F90227840B400240845 /* GameboardUnitTest.swift */,
+				CF6D32FC22786256008DF9D2 /* InputDirectionConverterUnitTest.swift */,
+				CF6D3301227864AC008DF9D2 /* InputValidatorUnitTest.swift */,
+				CF6D330722786732008DF9D2 /* ValidateMoveUnitTest.swift */,
 			);
 			path = MinesweepTestTarget;
 			sourceTree = "<group>";
@@ -228,13 +249,16 @@
 			files = (
 				CFE4E78A22734B6E003544D1 /* main.swift in Sources */,
 				CF730A832276FD0A00397BC3 /* Lives.swift in Sources */,
+				CF6D330522786623008DF9D2 /* ValidateMove.swift in Sources */,
 				CF730A8C227700C500397BC3 /* MinesweepGame.swift in Sources */,
 				CF730A912277097A00397BC3 /* Valid.swift in Sources */,
 				CFE4E79D22735707003544D1 /* Tile.swift in Sources */,
 				CFE4E7A1227357C6003544D1 /* main.swift in Sources */,
 				CF730A802276FAC000397BC3 /* Moves.swift in Sources */,
+				CF6D32F9227861AB008DF9D2 /* InputDirectionConverter.swift in Sources */,
 				CFE4E7A3227357C6003544D1 /* Tile.swift in Sources */,
 				CFEF6F8E22783C8B00240845 /* GameBoard.swift in Sources */,
+				CF6D33002278643B008DF9D2 /* InputValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6D330622786709008DF9D2 /* ValidateMove.swift in Sources */,
+				CF6D3303227864E5008DF9D2 /* InputValidator.swift in Sources */,
+				CF6D32FE227863C1008DF9D2 /* InputDirectionConverter.swift in Sources */,
 				CFEF6F8F2278403600240845 /* GameBoard.swift in Sources */,
+				CF6D32FD22786256008DF9D2 /* InputDirectionConverterUnitTest.swift in Sources */,
 				CF730A9222770B3700397BC3 /* Valid.swift in Sources */,
 				CF730A8F2277030900397BC3 /* MinesweepGame.swift in Sources */,
 				CF730A882276FF4300397BC3 /* Lives.swift in Sources */,
@@ -253,6 +281,8 @@
 				CFEF6F91227840B400240845 /* GameboardUnitTest.swift in Sources */,
 				CFE4E7A2227357C6003544D1 /* main.swift in Sources */,
 				CF730A8E2277028F00397BC3 /* MinesweepGameUnitTest.swift in Sources */,
+				CF6D330822786732008DF9D2 /* ValidateMoveUnitTest.swift in Sources */,
+				CF6D3302227864AC008DF9D2 /* InputValidatorUnitTest.swift in Sources */,
 				CFE4E79722734C94003544D1 /* MinesweepTestTarget.swift in Sources */,
 				CF730A8A2276FFF500397BC3 /* MovesUnitTest.swift in Sources */,
 			);

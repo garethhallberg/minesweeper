@@ -25,7 +25,7 @@ class GameBoard
     
     func checkIfTileHasMine(playerPosition: [Int]) -> Bool
     {
-        let pos = playerPosition[0] * boardWidth + (playerPosition[1] + 1)
+        let pos = playerPosition[0] * getBoardWidth() + playerPosition[1]
 
         let tile = tileArray[pos]
         let tileHasMine = tile.hasMine()

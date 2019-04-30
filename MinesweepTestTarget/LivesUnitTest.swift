@@ -36,5 +36,6 @@ class LivesUnitTest: XCTestCase {
         
         XCTAssert(lives.getLivesLeft() != 6)
     }
+    
 
 }

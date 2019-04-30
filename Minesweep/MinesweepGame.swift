@@ -26,10 +26,6 @@ class MinesweepGame {
     var board: GameBoard?
     
     var playerPosition = [4,4]
-//    var startingNumberOfLives = 2
-//    var startingNumberOfMoves = 20
-
-    
     
     init(width: Int = 8, height: Int = 10, lives: Int = 5) {
         board = GameBoard(width: width, height: height)
@@ -73,7 +69,7 @@ class MinesweepGame {
     
     func doMove(input: String)
     {
-        let validInput = verifyInputIsValid(input: input)
+        let validInput = InputValidator().verifyInputIsValid(input: input)
         
         if validInput.isValid == false
         {
@@ -81,16 +77,18 @@ class MinesweepGame {
             return
         }
         
-        let direction = convertInputToDirection(input: input)
-        let validMove = checkMoveIsValid(direction: direction, playerPosition: playerPosition)
-        if validMove.isValid == false {
-            printInvalidExplanation(invalid: validMove)
-            return
-        }
+        let direction = InputDirectionConverter().convertInputToDirection(input: input)
         
         
         if let board = board
         {
+            let validMove = ValidateMove().checkMoveIsValid(board: board, direction: direction, playerPosition: playerPosition)
+            if validMove.isValid == false {
+                printInvalidExplanation(invalid: validMove)
+                return
+            }
+        
+        
             if board.checkIfTileHasMine(playerPosition: playerPosition) == false
             {
                 updatePlayerPosition(direction: direction)
@@ -106,16 +104,26 @@ class MinesweepGame {
         print("You are at \(playerPosition). You have taken \(getMovesTaken()) moves. You have \(getLivesLeft()) lives left.")
     }
     
+    func setupPlayerPosition()
+    {
+        if let board = board
+        {
+            let maxValue = board.getBoardWidth() - 1
+            let randomXPosition = Int.random(in: 1 ... maxValue)
+            playerPosition = [0, randomXPosition]
+        }
+    }
     
     
-    func playerHitsMine()
+    //MARK:- Private
+    private func playerHitsMine()
     {
         lives?.didDie()
         print("You have hit a mine. You have lost one life and have \(getLivesLeft()) life left.")
     }
     
     
-    func updatePlayerPosition(direction: Direction)
+    private func updatePlayerPosition(direction: Direction)
     {
         //in a swift switch statement we always need a default value so I've in this case its the left move
         switch direction {
@@ -132,7 +140,7 @@ class MinesweepGame {
     }
     
     
-    func printInvalidExplanation(invalid: Valid)
+    private func printInvalidExplanation(invalid: Valid)
     {
         if let explanation = invalid.invalidExplanation
         {
@@ -141,82 +149,10 @@ class MinesweepGame {
     }
     
     
-    func setupPlayerPosition()
-    {
-        if let board = board
-        {
-            let randomXPosition = Int.random(in: 1 ... board.getBoardWidth())
-            playerPosition = [0, randomXPosition]
-        }
-    }
     
     
-    func convertInputToDirection(input: String) -> Direction
-    {
-        if input == "up" {
-            return Direction.up
-        }
-        
-        if input == "left" {
-            return Direction.left
-        }
-        
-        if input == "right" {
-            return Direction.right
-        }
-        
-        return Direction.down
-    }
     
-    
-    func checkMoveIsValid(direction: Direction, playerPosition: [Int]) -> Valid
-    {
-        if direction == .down {
-            if playerPosition[0] == 0
-            {
-                return Valid(valid: false, explanation: "You cannot move down when you are on the bottom row of the board")
-            }
-        }
-        
-        if direction == .left {
-            if let board = board
-            {
-                if playerPosition[1] % board.getBoardWidth() == 0
-                {
-                    return Valid(valid: false, explanation: "You cannot move left when you are on the left column of the board")
-                }
-            }
-            
-        }
-        
-        if direction == .right {
-            if let board = board
-            {
-                if playerPosition[1] % board.getBoardWidth() == board.getBoardWidth() - 1
-                {
-                    return Valid(valid: false, explanation: "You cannot move right when you are on the right column of the board")
-                }
-            }
-            
-            
-        }
-        
-        return Valid(valid: true, explanation: nil)
-    }
-    
-    
-    func verifyInputIsValid(input: String) -> Valid
-    {
-        if input == "up" || input == "left" || input == "down" || input == "right"
-        {
-            return Valid(valid: true, explanation: nil)
-        }
-        
-        return Valid(valid: false, explanation: "The input should be either \"up\", \"down\", \"left\", or \"right\"")
-    }
-    
-    
-    func getLivesLeft() -> Int
+    private func getLivesLeft() -> Int
     {
         if let lives = lives
         {
@@ -226,7 +162,7 @@ class MinesweepGame {
         return 0
     }
     
-    func getMovesTaken() -> Int
+    private func getMovesTaken() -> Int
     {
         if let moves = moves
         {
