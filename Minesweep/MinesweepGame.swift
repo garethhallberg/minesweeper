@@ -111,7 +111,7 @@ class MinesweepGame {
     func playerHitsMine()
     {
         lives?.didDie()
-        print("You have hit a mine. You have lost one life and have \(getLivesLeft())")
+        print("You have hit a mine. You have lost one life and have \(getLivesLeft()) life left.")
     }
     
     
